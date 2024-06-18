@@ -156,7 +156,7 @@ class PinCodeState<T extends PinCodeWidget> extends State<T> {
     );
     final enterIconImage = Icon(
       CupertinoIcons.arrow_right_to_line,
-      color: widget.deleteIconColor,
+      color: widget.filledIndicatorColor,
     );
     return LayoutBuilder(builder: (context, constraints) {
       final mh = constraints.maxHeight.clamp(480, 768).toDouble();
@@ -283,7 +283,7 @@ class PinCodeState<T extends PinCodeWidget> extends State<T> {
                           child: ElevatedButton(
                             style: widget.buttonStyle?.copyWith(
                                   foregroundColor:
-                                      const MaterialStatePropertyAll(
+                                      const WidgetStatePropertyAll(
                                           Colors.red),
                                 ) ??
                                 ElevatedButton.styleFrom(
@@ -312,7 +312,7 @@ class PinCodeState<T extends PinCodeWidget> extends State<T> {
                           label: widget.enterButtonLabel,
                           child: ElevatedButton(
                             style: widget.buttonStyle?.copyWith(
-                                  backgroundColor: MaterialStatePropertyAll(
+                                  backgroundColor: WidgetStatePropertyAll(
                                     Theme.of(context).colorScheme.surface,
                                   ),
                                 ) ??

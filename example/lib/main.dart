@@ -47,7 +47,7 @@ class _MyHomePageState extends State<MyHomePage> {
             const SizedBox(height: 40),
             Text(
               'Set up PIN',
-              style: Theme.of(context).textTheme.headline4,
+              style: Theme.of(context).textTheme.headlineMedium,
             ),
             const SizedBox(height: 20),
             const Text('You can use this PIN to unlock the app..'),
